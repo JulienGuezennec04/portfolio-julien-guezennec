@@ -1,0 +1,173 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  transition: background-color 0.4s ease;
+  padding: 15px 0;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.navbar-dark .nav-link {
+  color: #fff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover {
+  color: #00d9ff;
+}
+.navbarDark {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* SECTION GENERIQUE */
+section {
+  padding: 80px 0;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ACCUEIL / HERO */
+.bgimage {
+  height: 100vh;
+  background: url('../images/fond.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  text-align: center;
+  color: #fff;
+}
+.hero_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.hero_desc {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* À PROPOS */
+.imageAboutPage {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#about p {
+  font-size: 1.1rem;
+}
+
+/* SERVICES */
+.servicesText.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.servicesText.card:hover {
+  transform: translateY(-5px);
+  background-color: #007bff;
+  color: #fff;
+}
+.servicesText .card-body i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+.servicesText.card:hover i {
+  color: white;
+}
+
+/* PORTFOLIO */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 0.95rem;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* FORMULAIRE DE CONTACT */
+/* CONTACT */
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+.contact-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.contact-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+form .btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: #ccc;
+}
+footer a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #00d9ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero_title {
+    font-size: 2.2rem;
+  }
+  .hero_desc {
+    font-size: 1.2rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
